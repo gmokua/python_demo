@@ -13,6 +13,6 @@ for line in lines:
         status = line.rstrip() + " is Reachable"
     else:
         status = line.rstrip() + " is Not reachable"
-    with open("dext.txt", "w") as file:
+    with open("dext.txt", "a") as file:
         file.write(status)
     print(status)
